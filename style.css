@@ -121,3 +121,12 @@ img{
     height: auto;
     width: 100%;
 }
+.card-value {
+    transform: scale(.9);
+}
+.card-front:hover .card-value {
+    transform: scale(1);
+}
+.card-back:hover .card-value{
+    transform: scale(1);
+}
