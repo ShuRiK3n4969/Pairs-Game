@@ -76,13 +76,23 @@ body {
     font-family: "Saiyan Sans" , serif;
 }
 .overlay-text-small {
-    font-size: 3em;
+    font-size: .3em;
 }
-.overlay-text-visible {
+.overlay-text.visible {
     display: flex;
     flex-direction: column;
     animation: overlay-grow 500ms forwards;
 }
+@keyframes overlay-grow {
+    from {
+      background-color: rgba(0, 0, 0, 0);
+      font-size: 0;
+    }
+    to {
+      background-color: rgba(0, 0, 0, .8);
+      font-size: 10em;
+    }
+  }
 @keyframes dance {
     0% , 100%{
         transform: rotate(0deg);
@@ -119,7 +129,7 @@ body {
 }
 img{
     height: auto;
-    width: 100%;
+    width: 90%;
 }
 .card-value {
     transform: scale(.9);
