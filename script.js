@@ -131,8 +131,7 @@ class dragonBallZPairs {
     }
 
     canFlipCard(card) {
-        return true;
-        //return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
 }
 
@@ -141,7 +140,7 @@ function ready() {
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new dragonBallZPairs(100, cards);
 
-    overlays.forEach(overlay) => {
+    overlays.forEach(overlay => {
             overlay.addEventListener('click', () => {
                 overlay.classList.remove('visible');
                 game.startGame();

@@ -29,6 +29,13 @@ body {
     color:#183C26;
     font-size: 4em;
 }
+.info {
+    font-family: "Saiyan Sans", serif;
+    color: #183C26;
+    font-size: 50px;
+    margin: 50px;
+    border: 50px;
+}
 .game-container {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -134,9 +141,15 @@ img{
 .card-value {
     transform: scale(.9);
 }
+.shenron {
+    transform: scale(.9);
+}
 .card-front:hover .card-value {
     transform: scale(1);
 }
-.card-back:hover .card-value{
+.card-back:hover .card-value {
+    transform: scale(1);
+}
+.card-back:hover .shenron {
     transform: scale(1);
 }
